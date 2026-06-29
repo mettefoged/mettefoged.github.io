@@ -2,31 +2,25 @@
 layout: editorial
 title: "Research"
 permalink: /research/
-excerpt: "Articles, working papers, and applied projects."
+excerpt: "Working papers, articles, and research dissemination."
 author_profile: false
 heading: "Research"
-dek: "Journal articles, working papers, and ongoing projects."
 ---
 
 <header class="page-head">
-  <h1 class="page-head__title">{{ page.heading | default: page.title }}</h1>
-  {% if page.dek %}<p class="page-head__dek">{{ page.dek }}</p>{% endif %}
+<h1 class="page-head__title">{{ page.heading | default: page.title }}</h1>
 </header>
 
 {% for section in site.data.research.sections %}
-  <section class="research-section">
-    <div class="section-rule">
-      <h2>{{ section.title }}</h2>
-      <span class="rule"></span>
-    </div>
-
-    {% if section.items and section.items.size > 0 %}
-      {% for item in section.items %}
-        {% assign num = forloop.index | prepend: '0' | slice: -2, 2 %}
-        {% include research-entry.html item=item number=num %}
-      {% endfor %}
-    {% elsif section.empty_message %}
-      <p class="empty-note">{{ section.empty_message }}</p>
-    {% endif %}
-  </section>
+<section class="research-section">
+<div class="section-rule"><h2>{{ section.title }}</h2><span class="rule"></span></div>
+{% if section.items and section.items.size > 0 %}
+{% for item in section.items %}
+{% assign num = forloop.index | prepend: '0' | slice: -2, 2 %}
+{% include research-entry.html item=item number=num %}
+{% endfor %}
+{% elsif section.empty_message %}
+<p class="empty-note">{{ section.empty_message }}</p>
+{% endif %}
+</section>
 {% endfor %}

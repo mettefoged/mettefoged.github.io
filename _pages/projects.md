@@ -17,9 +17,11 @@ dek: "Ongoing research agendas. Click a project to see what it is about and the 
 {% if agendas and agendas.size > 0 %}
 <div class="projects-grid">
 {% for agenda in agendas %}
+{%- assign a_photo = agenda.photo -%}
+{%- if a_photo and a_photo != "" %}{% unless a_photo contains "/" %}{% assign a_photo = a_photo | prepend: "/images/projects/" %}{% endunless %}{% endif -%}
 <details class="proj">
 <summary class="proj__summary">
-<span class="proj__photo">{% if agenda.photo %}<img src="{{ agenda.photo | relative_url }}" alt="{{ agenda.title }}" loading="lazy">{% endif %}</span>
+<span class="proj__photo">{% if a_photo %}<img src="{{ a_photo | relative_url }}" alt="{{ agenda.title }}" loading="lazy">{% endif %}</span>
 <span class="proj__bar"><span class="proj__title">{{ agenda.title }}</span><span class="proj__toggle" aria-hidden="true"></span></span>
 </summary>
 <div class="proj__body">

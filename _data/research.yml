@@ -1,12 +1,70 @@
-# Research outputs, grouped into sections.
-# An entry WITH a `summary` gets the full layout (index number, Read-summary
-# toggle, BibTeX); without a summary it renders as a compact entry. Empty
-# sections show their `empty_message`. Co-authors resolve via _data/coauthors.yml
-# (use `key`); your own name stays plain with `name: "Mette Foged"`.
+# Research outputs, grouped into sections (rendered top-to-bottom).
+# An entry with a `summary` and/or `bibtex` shows the expandable Read-summary /
+# BibTeX buttons (like econmikkel). Co-authors resolve via _data/coauthors.yml
+# (use `key`); your own name stays plain with `name: "Mette Foged"`. An
+# entry-level `url:` turns the TITLE into a link (used for dissemination).
 sections:
+  - title: "Working papers"
+    items:
+      - title: "PTSD and Refugees' Underemployment: Evidence from Displaced Ukrainians"
+        year: 2026
+        venue: "RFBerlin Working Paper"
+        authors:
+          - name: "Mette Foged"
+          - key: "karen_inge_karstoft"
+          - key: "edith_zink"
+        bibtex: |
+          @techreport{foged2026ptsd,
+            author      = {Foged, Mette and Karstoft, Karen-Inge and Zink, Edith},
+            title       = {PTSD and Refugees' Underemployment: Evidence from Displaced Ukrainians},
+            year        = {2026},
+            institution = {RFBerlin},
+            type        = {Working Paper}
+          }
+        links:
+          - label: "RFBerlin"
+            url: "https://www.rfberlin.com/research-insights/why-some-refugees-struggle-to-work/"
+
+      - title: "How Initial Accommodation Shapes Refugee Integration: Quasi-Experimental Evidence from the Ukrainian Displacement Crisis in Denmark"
+        year: 2025
+        venue: "RFBerlin Working Paper"
+        authors:
+          - name: "Mette Foged"
+          - key: "jens_hainmueller"
+          - key: "mikkel_stahlschmidt"
+          - key: "edith_zink"
+        bibtex: |
+          @techreport{foged2025accommodation,
+            author      = {Foged, Mette and Hainmueller, Jens and Stahlschmidt, Mikkel Hahn and Zink, Edith},
+            title       = {How Initial Accommodation Shapes Refugee Integration: Quasi-Experimental Evidence from the Ukrainian Displacement Crisis in Denmark},
+            year        = {2025},
+            institution = {RFBerlin},
+            type        = {Working Paper}
+          }
+        links:
+          - label: "RFBerlin paper"
+            url: "https://www.rfberlin.com/wp-content/uploads/2025/12/25154.pdf"
+
+      - title: "Harsh Rhetoric and Cultural Identity: Backlash Effects of Denmark's Ghetto List"
+        year: 2025
+        venue: "RFBerlin Working Paper"
+        authors:
+          - name: "Mette Foged"
+          - key: "teresa_freitas_monteiro"
+          - key: "linea_hasager"
+        bibtex: |
+          @techreport{foged2025ghetto,
+            author      = {Foged, Mette and Freitas-Monteiro, Teresa and Hasager, Linea},
+            title       = {Harsh Rhetoric and Cultural Identity: Backlash Effects of Denmark's Ghetto List},
+            year        = {2025},
+            institution = {RFBerlin},
+            type        = {Working Paper}
+          }
+        links:
+          - label: "RFBerlin paper"
+            url: "https://www.rfberlin.com/network-paper/harsh-rhetoric-and-cultural-identity-backlash-effects-of-denmarks-ghetto-list/"
+
   - title: "Journal articles"
-    description: "Published and forthcoming peer-reviewed work."
-    empty_message: "No journal articles added yet."
     items:
       - title: "Integrating Refugees by Addressing Labor Shortages? A Policy Evaluation"
         venue: "Research in Labor Economics (forthcoming)"
@@ -14,6 +72,16 @@ sections:
           - name: "Mette Foged"
           - key: "janis_kreuder"
           - key: "giovanni_peri"
+        bibtex: |
+          @article{foged_integrating,
+            author  = {Foged, Mette and Kreuder, Janis and Peri, Giovanni},
+            title   = {Integrating Refugees by Addressing Labor Shortages? A Policy Evaluation},
+            journal = {Research in Labor Economics},
+            note    = {Forthcoming}
+          }
+        links:
+          - label: "NBER working paper"
+            url: "https://www.nber.org/papers/w29781"
 
       - title: "Language Training and Refugees' Integration"
         year: 2024
@@ -24,14 +92,42 @@ sections:
           - key: "giovanni_peri"
           - key: "jacob_arendt"
           - key: "iben_bolvig"
+        bibtex: |
+          @article{foged2024language,
+            author  = {Foged, Mette and Hasager, Linea and Peri, Giovanni and Arendt, Jacob Nielsen and Bolvig, Iben},
+            title   = {Language Training and Refugees' Integration},
+            journal = {The Review of Economics and Statistics},
+            year    = {2024},
+            volume  = {106},
+            number  = {4},
+            pages   = {1157--1166},
+            doi     = {10.1162/rest_a_01216}
+          }
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1162/rest_a_01216"
 
       - title: "Comparing the Effects of Policies for the Labor Market Integration of Refugees"
         year: 2024
-        venue: "Journal of Labor Economics, 42(SI): 335-377"
+        venue: "Journal of Labor Economics, 42(S1): 335-377"
         authors:
           - name: "Mette Foged"
           - key: "linea_hasager"
           - key: "giovanni_peri"
+        bibtex: |
+          @article{foged2024comparing,
+            author  = {Foged, Mette and Hasager, Linea and Peri, Giovanni},
+            title   = {Comparing the Effects of Policies for the Labor Market Integration of Refugees},
+            journal = {Journal of Labor Economics},
+            year    = {2024},
+            volume  = {42},
+            number  = {S1},
+            pages   = {S335--S377},
+            doi     = {10.1086/728806}
+          }
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1086/728806"
 
       - title: "Access to Language Training and Local Integration of Refugees"
         year: 2023
@@ -39,6 +135,19 @@ sections:
         authors:
           - name: "Mette Foged"
           - key: "cynthia_van_der_werf"
+        bibtex: |
+          @article{foged2023access,
+            author  = {Foged, Mette and van der Werf, Cynthia},
+            title   = {Access to Language Training and the Local Integration of Refugees},
+            journal = {Labour Economics},
+            year    = {2023},
+            volume  = {84},
+            pages   = {102366},
+            doi     = {10.1016/j.labeco.2023.102366}
+          }
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1016/j.labeco.2023.102366"
 
       - title: "Intergenerational Spillover Effects of Language Training for Refugees"
         year: 2023
@@ -49,6 +158,19 @@ sections:
           - key: "giovanni_peri"
           - key: "jacob_arendt"
           - key: "iben_bolvig"
+        bibtex: |
+          @article{foged2023intergenerational,
+            author  = {Foged, Mette and Hasager, Linea and Peri, Giovanni and Arendt, Jacob Nielsen and Bolvig, Iben},
+            title   = {Intergenerational Spillover Effects of Language Training for Refugees},
+            journal = {Journal of Public Economics},
+            year    = {2023},
+            volume  = {220},
+            pages   = {104840},
+            doi     = {10.1016/j.jpubeco.2023.104840}
+          }
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1016/j.jpubeco.2023.104840"
 
       - title: "The Role of Labor Market Institutions in the Impact of Immigration on Wages and Employment"
         year: 2022
@@ -57,12 +179,39 @@ sections:
           - name: "Mette Foged"
           - key: "linea_hasager"
           - key: "vasco_yasenov"
+        bibtex: |
+          @article{foged2022role,
+            author  = {Foged, Mette and Hasager, Linea and Yasenov, Vasil},
+            title   = {The Role of Labor Market Institutions in the Impact of Immigration on Wages and Employment},
+            journal = {The Scandinavian Journal of Economics},
+            year    = {2022},
+            volume  = {124},
+            number  = {1},
+            pages   = {164--213},
+            doi     = {10.1111/sjoe.12452}
+          }
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1111/sjoe.12452"
 
       - title: "Family Migration and Relative Earnings Potentials"
         year: 2016
         venue: "Labour Economics, 42(C): 87-100 (Labour Economics Prize, best paper 2016)"
         authors:
           - name: "Mette Foged"
+        bibtex: |
+          @article{foged2016family,
+            author  = {Foged, Mette},
+            title   = {Family Migration and Relative Earnings Potentials},
+            journal = {Labour Economics},
+            year    = {2016},
+            volume  = {42},
+            pages   = {87--100},
+            url     = {https://www.sciencedirect.com/science/article/abs/pii/S0927537116300860}
+          }
+        links:
+          - label: "Paper"
+            url: "https://www.sciencedirect.com/science/article/abs/pii/S0927537116300860"
 
       - title: "Immigrants' Effect on Native Workers: New Analysis on Longitudinal Data"
         year: 2016
@@ -70,42 +219,80 @@ sections:
         authors:
           - name: "Mette Foged"
           - key: "giovanni_peri"
+        bibtex: |
+          @article{foged2016immigrants,
+            author  = {Foged, Mette and Peri, Giovanni},
+            title   = {Immigrants' Effect on Native Workers: New Analysis on Longitudinal Data},
+            journal = {American Economic Journal: Applied Economics},
+            year    = {2016},
+            volume  = {8},
+            number  = {2},
+            pages   = {1--34},
+            doi     = {10.1257/app.20150114}
+          }
+        links:
+          - label: "DOI"
+            url: "https://doi.org/10.1257/app.20150114"
 
-  - title: "Working papers and projects"
-    description: "Current papers, ongoing research, and major projects."
-    empty_message: "No working papers added yet."
+  - title: "Research dissemination"
     items:
-      - title: "PTSD and Refugees' Underemployment: Evidence from Displaced Ukrainians"
+      - title: "3 ud af 4 ukrainere ønsker at blive i Danmark"
         year: 2026
-        venue: "RFBerlin Working Paper"
+        venue: "ROCKWOOL Foundation analysis"
+        url: "https://rockwoolfonden.dk/udgivelser/3-ud-af-4-ukrainere-oensker-at-blive-i-danmark/"
         authors:
           - name: "Mette Foged"
           - key: "karen_inge_karstoft"
           - key: "edith_zink"
 
-      - title: "How Initial Accommodation Shapes Refugee Integration: Quasi-Experimental Evidence from the Ukrainian Displacement Crisis in Denmark"
+      - title: "The Majority of Ukrainians Wish to Stay in Denmark"
         year: 2025
-        venue: "RFBerlin Working Paper"
+        venue: "ROCKWOOL Foundation Berlin (EN / DA / DE / PL / UK)"
         authors:
           - name: "Mette Foged"
-          - key: "jens_hainmueller"
-          - key: "mikkel_stahlschmidt"
+          - key: "karen_inge_karstoft"
           - key: "edith_zink"
 
-      - title: "Harsh Rhetoric and Cultural Identity: Backlash Effects of Denmark's Ghetto List"
-        year: 2025
-        venue: "RFBerlin Working Paper"
+      - title: "Arbeiten ukrainische Geflüchtete mehr als andere Geflüchtete? Erwerbstätigenquoten aus Dänemark im Vergleich mit Deutschland"
+        year: 2024
+        venue: "ifo Schnelldienst"
+        url: "https://www.ifo.de/en/publications/2024/journal-complete-issue/ifo-schnelldienst-102024-return-or-integration"
+        authors:
+          - key: "edith_zink"
+          - key: "karen_inge_karstoft"
+          - name: "Mette Foged"
+
+      - title: "Status for ukrainernes arbejdsmarkedsintegration"
+        year: 2024
+        venue: "ROCKWOOL Foundation analysis"
+        url: "https://rockwoolfonden.dk/udgivelser/status-for-ukrainernes-arbejdsmarkedsintegration/"
         authors:
           - name: "Mette Foged"
-          - key: "teresa_freitas_monteiro"
+          - key: "edith_zink"
+          - key: "jacob_arendt"
+
+      - title: "Language training and placement in strong labour markets promote refugees' long-run economic integration"
+        year: 2022
+        venue: "VoxEU, CEPR"
+        url: "https://cepr.org/voxeu/columns/language-training-and-placement-strong-labour-markets-promote-refugees-long-run"
+        authors:
           - key: "linea_hasager"
+          - key: "giovanni_peri"
+          - name: "Mette Foged"
 
-  - title: "Non-academic work"
-    description: "Policy notes, reports, and applied writing."
-    empty_message: "No content added yet."
-    items: []
+      - title: "Language training and refugees' success"
+        year: 2021
+        venue: "VoxEU, CEPR"
+        url: "https://cepr.org/voxeu/columns/language-training-and-refugees-success"
+        authors:
+          - key: "linea_hasager"
+          - key: "giovanni_peri"
+          - name: "Mette Foged"
 
-  - title: "Older projects and research assistance contribution"
-    description: "Earlier projects and analysis support."
-    empty_message: "Nothing added yet."
-    items: []
+      - title: "How immigrants and job mobility help low-skilled workers"
+        year: 2015
+        venue: "VoxEU, CEPR"
+        url: "https://cepr.org/voxeu/columns/how-immigrants-and-job-mobility-help-low-skilled-workers"
+        authors:
+          - key: "giovanni_peri"
+          - name: "Mette Foged"

@@ -3,28 +3,92 @@
 #
 # Each agenda supports:
 #   title       (required)  — name of the research agenda
-#   photo       (optional)  — path under /images/projects/, e.g. /images/projects/x.jpg
+#   photo       (optional)  — filename in /images/projects/ (or a full path)
 #   description (optional)  — 1-3 sentences on what this agenda is about
-#   papers      (optional)  — list of 2-5 related papers, each with:
-#                               title (required), year, venue (optional),
-#                               and links: [ { label, url } ]
-#
-# Replace the example below with real agendas. Leave the file with no agendas
-# and the Projects page shows a placeholder instead.
+#   papers      (optional)  — list of papers, each with title, year, venue,
+#                             and links: [ { label, url } ]
 
-- title: "Refugee integration"
-  photo: "/images/projects/refugee-integration.jpg"
-  description: "How reception policy and initial conditions shape the long-run integration of refugees."
+- title: "Refugee integration policy"
+  photo: "refugee-integration-policy.jpg"
+  description: "How language training and active labour-market policies shape refugees' economic and social integration."
   papers:
-    - title: "How Initial Accommodation Shapes Refugee Integration"
+    - title: "Language Training and Refugees' Integration"
+      year: 2024
+      venue: "Review of Economics and Statistics"
+      links:
+        - label: "DOI"
+          url: "https://doi.org/10.1162/rest_a_01216"
+    - title: "Comparing the Effects of Policies for the Labor Market Integration of Refugees"
+      year: 2024
+      venue: "Journal of Labor Economics"
+      links:
+        - label: "DOI"
+          url: "https://doi.org/10.1086/728806"
+    - title: "Intergenerational Spillover Effects of Language Training for Refugees"
+      year: 2023
+      venue: "Journal of Public Economics"
+      links:
+        - label: "DOI"
+          url: "https://doi.org/10.1016/j.jpubeco.2023.104840"
+    - title: "Access to Language Training and Local Integration of Refugees"
+      year: 2023
+      venue: "Labour Economics"
+      links:
+        - label: "DOI"
+          url: "https://doi.org/10.1016/j.labeco.2023.102366"
+    - title: "Integrating Refugees by Addressing Labor Shortages? A Policy Evaluation"
+      venue: "Research in Labor Economics (forthcoming)"
+      links:
+        - label: "NBER working paper"
+          url: "https://www.nber.org/papers/w29781"
+
+- title: "The Ukrainian displacement crisis"
+  photo: "ukrainian-displacement.jpg"
+  description: "Reception, accommodation, and well-being of Ukrainian refugees who arrived in Denmark after the 2022 invasion."
+  papers:
+    - title: "How Initial Accommodation Shapes Refugee Integration: Quasi-Experimental Evidence from the Ukrainian Displacement Crisis in Denmark"
+      year: 2025
+      venue: "RFBerlin Working Paper"
+      links:
+        - label: "RFBerlin paper"
+          url: "https://www.rfberlin.com/wp-content/uploads/2025/12/25154.pdf"
+    - title: "PTSD and Refugees' Underemployment: Evidence from Displaced Ukrainians"
       year: 2026
-      venue: "Working paper"
+      venue: "RFBerlin Working Paper"
+      links:
+        - label: "RFBerlin"
+          url: "https://www.rfberlin.com/research-insights/why-some-refugees-struggle-to-work/"
+
+- title: "Immigration and native labour markets"
+  photo: "immigration-labour-markets.jpg"
+  description: "How immigration affects the wages, employment, and mobility of native workers, and the role of labour-market institutions."
+  papers:
+    - title: "Immigrants' Effect on Native Workers: New Analysis on Longitudinal Data"
+      year: 2016
+      venue: "American Economic Journal: Applied Economics"
+      links:
+        - label: "DOI"
+          url: "https://doi.org/10.1257/app.20150114"
+    - title: "The Role of Labor Market Institutions in the Impact of Immigration on Wages and Employment"
+      year: 2022
+      venue: "Scandinavian Journal of Economics"
+      links:
+        - label: "DOI"
+          url: "https://doi.org/10.1111/sjoe.12452"
+
+- title: "Immigration, neighbourhoods & identity"
+  photo: "neighbourhoods-identity.jpg"
+  description: "How neighbourhood policy, public rhetoric, and family decisions shape migrants' identity and outcomes."
+  papers:
+    - title: "Harsh Rhetoric and Cultural Identity: Backlash Effects of Denmark's Ghetto List"
+      year: 2025
+      venue: "RFBerlin Working Paper"
+      links:
+        - label: "RFBerlin paper"
+          url: "https://www.rfberlin.com/network-paper/harsh-rhetoric-and-cultural-identity-backlash-effects-of-denmarks-ghetto-list/"
+    - title: "Family Migration and Relative Earnings Potentials"
+      year: 2016
+      venue: "Labour Economics"
       links:
         - label: "Paper"
-          url: "https://example.com"
-    - title: "Who Opens Their Homes to Refugees?"
-      year: 2026
-      venue: "Working paper"
-      links:
-        - label: "Paper"
-          url: "https://example.com"
+          url: "https://www.sciencedirect.com/science/article/abs/pii/S0927537116300860"

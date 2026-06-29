@@ -18,10 +18,10 @@ jacob_arendt:
 
 iben_bolvig:
   name: "Iben Bolvig"
-  url: "https://www.seniorerpaaarbejdsmarkedet.dk/da/medarbejdere/iben-bolvig-06z7z4j2/"
+  url: "https://www.vive.dk/da/medarbejdere/iben-bolvig-g2le51v8/"
+  photo: "iben_bolvig.jpg"
   role: "Senior Researcher"
   affiliation: "VIVE"
-  photo: "iben_bolvig.jpg"
 
 teresa_freitas_monteiro:
   name: "Teresa Freitas Monteiro"
@@ -89,6 +89,6 @@ edith_zink:
 mikkel_stahlschmidt:
   name: "Mikkel H. Stahlschmidt"
   url: "https://econmikkel.github.io/"
-  role: "PhD student"
   photo: "mikkel_stahlschmidt.jpg"
+  role: "PhD student"
   affiliation: "ROCKWOOL Foundation, University of Copenhagen"

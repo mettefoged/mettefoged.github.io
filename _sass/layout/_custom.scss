@@ -701,3 +701,7 @@ h1, h2, h3, h4, h5, h6 {
 .cv-actions { margin: 10px 0 0; }
 .cv-embed { margin-top: 24px; height: 85vh; min-height: 600px; border: 1px solid var(--hairline); }
 .cv-embed object, .cv-embed iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* Title-as-link (used by Research Dissemination entries) */
+.older__title a, .wp__title a { color: var(--ink); }
+.older__title a:hover, .wp__title a:hover { color: var(--accent); }

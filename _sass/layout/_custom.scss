@@ -692,7 +692,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 600px) {
   .ed-shell { padding: 0 18px; }
-  .ed-nav { gap: 22px; }
+  /* let the nav wrap onto multiple rows instead of overflowing the screen */
+  .ed-nav__inner { flex-wrap: wrap; gap: 10px 16px; padding: 12px 0; }
+  .ed-nav a { font-size: 12px; letter-spacing: 0.05em; padding-bottom: 3px; }
   .wp { grid-template-columns: 1fr; }
   .wp__num { display: none; }
 }

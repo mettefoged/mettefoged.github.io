@@ -1,0 +1,11 @@
+# Homepage news — add new items to the TOP of this list.
+# Optional `kicker` shows as the small uppercase eyebrow above the headline.
+# Use the Content Manager (content-manager.html) or copy this template:
+#
+# - date: 2026-01-15
+#   kicker: "Working Paper"
+#   title: "Short headline"
+#   body: "One or two sentences of context."
+#   link:
+#     label: "Read more"
+#     url: "https://example.com"

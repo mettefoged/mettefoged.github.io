@@ -1,0 +1,7 @@
+# Frequent co-authors, defined once and reused in _data/research.yml via `key`.
+# Each key maps to a display name and a homepage URL (the name becomes a link).
+# Add your own collaborators here, for example:
+#
+# jens_hainmueller:
+#   name: "Jens Hainmueller"
+#   url: "https://j-hai.github.io/"

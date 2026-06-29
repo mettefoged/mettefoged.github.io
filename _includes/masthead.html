@@ -1,0 +1,32 @@
+{% include base_path %}
+
+<header class="masthead ed-masthead">
+  <div class="ed-utility">
+    <span>{{ site.author.location | default: "Copenhagen, Denmark" }}</span>
+    <span>{{ site.time | date: "%B %-d, %Y" }}</span>
+  </div>
+
+  <div class="ed-nameplate">
+    <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  </div>
+
+  <div class="scotch"></div>
+</header>
+
+<nav class="ed-nav">
+  <div class="ed-nav__inner">
+    <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="is-active"{% endif %}>Home</a>
+    {% for link in site.data.navigation.main %}
+      {% comment %} external / file links open in a new tab and never show active {% endcomment %}
+      {% assign is_ext = false %}
+      {% if link.url contains 'http' or link.url contains '.pdf' %}{% assign is_ext = true %}{% endif %}
+      {% if is_ext %}{% assign href = link.url %}{% else %}{% assign href = link.url | relative_url %}{% endif %}
+      {% assign active = false %}
+      {% unless is_ext %}
+        {% assign slug = link.url | remove_first: '/' | split: '/' | first %}
+        {% if slug != '' and page.url contains slug %}{% assign active = true %}{% endif %}
+      {% endunless %}
+      <a href="{{ href }}"{% if is_ext %} target="_blank" rel="noopener"{% endif %}{% if active %} class="is-active"{% endif %}>{{ link.title }}</a>
+    {% endfor %}
+  </div>
+</nav>

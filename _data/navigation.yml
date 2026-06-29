@@ -1,0 +1,13 @@
+# Header navigation (Home is added automatically before these).
+# Reorder/add/remove items here. A link to a .pdf or an external http(s) URL
+# opens in a new tab; internal page links drive the active-page underline.
+
+main:
+  - title: "Research"
+    url: /research/
+  - title: "Projects"
+    url: /projects/
+  - title: "People"
+    url: /people/
+  - title: "CV"
+    url: /files/CV.pdf

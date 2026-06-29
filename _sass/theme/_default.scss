@@ -1,0 +1,49 @@
+/* ==========================================================================
+   DEFAULT THEME
+   ========================================================================== */
+
+/* Color codes used for the theme */
+$gray                       : #666666;
+$dark-gray                  : #666666;
+$darker-gray                : #666666;
+$light-gray                 : #b3b3b3;
+$lighter-gray               : #b3b3b3;
+$rf-main-purple             : #5a6ecd;
+$rf-main-orange             : #f2920c;
+$rf-sec-purple             : #b8caed;
+$rf-sec-orange             : #f9c986;
+
+/* Color codes used for the site */
+$danger-color               : #ee5f5b;
+$info-color                 : #2f7f93;
+$notice-color               : #5a6ecd;
+$success-color              : #62c462;
+$warning-color              : #f89406;
+
+/* Other basic settings for the template */
+$border-radius              : 6px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Default light theme for the site */
+:root {
+    --global-base-color                 : #{$rf-main-purple};
+    --global-bg-color                   : #{$rf-main-purple};
+    --global-border-color               : #FFFFFF;
+    --global-code-background-color      : #fafafa;
+    --global-code-text-color            : #{$darker-gray};
+    --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
+    --global-link-color                 : {$rf-main-purple};
+    --global-link-color-hover           : mix(#000, #{$rf-main-purple}, 25%);
+    --global-link-color-visited         : mix(#fff, #{$rf-main-purple}, 25%);  
+    --global-masthead-link-color        : #FFFFFF;
+    --global-masthead-link-color-hover  : mix(#000, #FFFFFF, 25%);    
+    --global-text-color                 : #FFFFFF;
+    --global-text-color-light           : #FFFFFF;
+    --global-thead-color                : #FFFFFF;
+}

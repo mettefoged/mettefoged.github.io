@@ -1,13 +1,16 @@
-# People grid, organised into groups. A member can reference _data/coauthors.yml
-# by `key` (recommended) or be defined inline. See README for the full schema.
+# People grid — a single list shown as photo cards. Each entry references
+# _data/coauthors.yml by `key` (recommended) or is defined inline
+# (name, plus optional role / affiliation / url / photo).
 
-- group: "Co-authors"
-  members:
-    - key: "linea_hasager"
-    - key: "giovanni_peri"
-    - key: "jacob_arendt"
-    - key: "iben_bolvig"
-
-- group: "PhD students"
-  members:
-    - key: "mikkel_stahlschmidt"
+- key: "jacob_arendt"
+- key: "iben_bolvig"
+- key: "teresa_freitas_monteiro"
+- key: "jens_hainmueller"
+- key: "linea_hasager"
+- key: "karen_inge_karstoft"
+- key: "janis_kreuder"
+- key: "giovanni_peri"
+- key: "mikkel_stahlschmidt"
+- key: "cynthia_van_der_werf"
+- key: "vasco_yasenov"
+- key: "edith_zink"

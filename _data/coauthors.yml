@@ -5,22 +5,63 @@
 # Each entry supports:
 #   name        (required)  — display name (byline + People card name)
 #   url         (optional)  — homepage; makes the name / People card a link
-#   photo       (optional)  — path under /images/people/, used on the People grid
+#   photo       (optional)  — filename in /images/people/ (or a full path)
 #   role        (optional)  — position / title, used on the People grid
 #   affiliation (optional)  — institution, used on the People grid
+
+jacob_arendt:
+  name: "Jacob Nielsen Arendt"
+  url: "https://rockwoolfonden.dk/medarbejdere/jacob-nielsen-arendt/"
+  photo: "jacob_arendt.jpg"
+
+iben_bolvig:
+  name: "Iben Bolvig"
+  url: "https://www.seniorerpaaarbejdsmarkedet.dk/da/medarbejdere/iben-bolvig-06z7z4j2/"
+
+teresa_freitas_monteiro:
+  name: "Teresa Freitas Monteiro"
+  url: "https://teresafreitasmonteiro.weebly.com/"
+  photo: "teresa_freitas_monteiro.jpg"
+
+jens_hainmueller:
+  name: "Jens Hainmueller"
+  url: "https://j-hai.github.io/"
+  photo: "jens_hainmueller.jpg"
 
 linea_hasager:
   name: "Linea Hasager"
   url: "https://sites.google.com/view/lineahasager/home"
+  photo: "linea_hasager.jpg"
+
+karen_inge_karstoft:
+  name: "Karen-Inge Karstoft"
+  url: "https://psy.ku.dk/ansatte/videnskabeligt-personale/?pure=da/persons/278315"
+  photo: "karen_inge_karstoft.jpg"
+
+janis_kreuder:
+  name: "Janis Kreuder"
+  url: "https://www.linkedin.com/in/janis-kreuder/"
+  photo: "janis_kreuder.jpg"
 
 giovanni_peri:
   name: "Giovanni Peri"
+  url: "https://giovanniperi.ucdavis.edu/"
+  photo: "giovanni_peri.jpg"
 
-jacob_arendt:
-  name: "Jacob Nielsen Arendt"
+cynthia_van_der_werf:
+  name: "Cynthia van der Werf"
+  url: "https://cynthiavanderwerf.com/"
+  photo: "cynthia_van_der_werf.jpg"
 
-iben_bolvig:
-  name: "Iben Bolvig"
+vasco_yasenov:
+  name: "Vasco Yasenov"
+  url: "https://vyasenov.github.io/"
+  photo: "vasco_yasenov.jpg"
+
+edith_zink:
+  name: "Edith Zink"
+  url: "https://zinked.github.io/"
+  photo: "edith_zink.jpg"
 
 mikkel_stahlschmidt:
   name: "Mikkel H. Stahlschmidt"

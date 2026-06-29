@@ -2,10 +2,10 @@
 layout: editorial
 title: "People"
 permalink: /people/
-excerpt: "Students, co-authors, and collaborators."
+excerpt: "People I have collaborated with."
 author_profile: false
 heading: "People"
-dek: "Students I have supervised, co-authors, and people I have worked with."
+dek: "People who I have had an excellent opportunity to collaborate with."
 ---
 
 <header class="page-head">
@@ -13,14 +13,10 @@ dek: "Students I have supervised, co-authors, and people I have worked with."
 {% if page.dek %}<p class="page-head__dek">{{ page.dek }}</p>{% endif %}
 </header>
 
-{% assign groups = site.data.people | where_exp: "g", "g.group" %}
-{% if groups and groups.size > 0 %}
-{% for group in groups %}
-<section class="people-group">
-<div class="section-rule"><h2>{{ group.group }}</h2><span class="rule"></span></div>
-{% if group.members %}
+{% assign people = site.data.people %}
+{% if people and people.size > 0 %}
 <ul class="people-grid">
-{% for member in group.members %}
+{% for member in people %}
 {%- assign co = nil -%}
 {%- if member.key %}{% assign co = site.data.coauthors[member.key] %}{% endif -%}
 {%- assign p_name = member.name | default: co.name -%}
@@ -39,9 +35,6 @@ dek: "Students I have supervised, co-authors, and people I have worked with."
 </li>
 {% endfor %}
 </ul>
-{% endif %}
-</section>
-{% endfor %}
 {% else %}
 <p class="empty-note">No people added yet.</p>
 {% endif %}

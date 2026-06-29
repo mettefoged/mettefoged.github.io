@@ -1,18 +1,30 @@
-# Larger research agendas, each gathering a few related papers.
-# Each agenda has a title, a short description, and a list of `papers`.
-# Papers reuse the same fields as research.yml entries (authors resolve via
-# coauthors.yml; add `older: true` on a link to tuck it behind a toggle).
-# Leave this file with no agendas and the Projects page shows a placeholder.
+# Research agendas, shown as a grid of clickable photo cards. Clicking a card
+# expands it to reveal the description and the related papers.
+#
+# Each agenda supports:
+#   title       (required)  — name of the research agenda
+#   photo       (optional)  — path under /images/projects/, e.g. /images/projects/x.jpg
+#   description (optional)  — 1-3 sentences on what this agenda is about
+#   papers      (optional)  — list of 2-5 related papers, each with:
+#                               title (required), year, venue (optional),
+#                               and links: [ { label, url } ]
+#
+# Replace the example below with real agendas. Leave the file with no agendas
+# and the Projects page shows a placeholder instead.
 
-# - title: "Refugee integration"
-#   description: "A line of work on how reception policy shapes refugee outcomes."
-#   papers:
-#     - title: "Paper title"
-#       year: 2024
-#       venue: "Journal of Something"
-#       authors:
-#         - name: "Mette Foged"
-#         - key: "coauthor_key"
-#       links:
-#         - label: "Paper"
-#           url: "https://example.com"
+- title: "Refugee integration"
+  photo: "/images/projects/refugee-integration.jpg"
+  description: "How reception policy and initial conditions shape the long-run integration of refugees."
+  papers:
+    - title: "How Initial Accommodation Shapes Refugee Integration"
+      year: 2026
+      venue: "Working paper"
+      links:
+        - label: "Paper"
+          url: "https://example.com"
+    - title: "Who Opens Their Homes to Refugees?"
+      year: 2026
+      venue: "Working paper"
+      links:
+        - label: "Paper"
+          url: "https://example.com"

@@ -1,18 +1,16 @@
-# People, organised into groups (e.g. PhD students, collaborators).
-# Each group has a `group` name and a list of `members`.
-# Each member: name (required), optional role, url (makes the name a link),
-# and an optional note describing the collaboration.
-# Leave this with no groups and the People page shows a placeholder.
+# People grid, organised into groups. A member can reference _data/coauthors.yml
+# by `key` (recommended) or be defined inline. See README for the full schema.
 
+- group: "Co-authors"
+  members:
+    - key: "linea_hasager"
+    - key: "giovanni_peri"
+    - key: "jacob_arendt"
+    - key: "iben_bolvig"
+
+# Add more groups as needed, e.g.:
 # - group: "PhD students"
 #   members:
 #     - name: "Student Name"
-#       role: "PhD student, 2023–"
-#       url: "https://example.com"
-#       note: "Working on refugee labour-market integration."
-#
-# - group: "Collaborators"
-#   members:
-#     - name: "Collaborator Name"
-#       url: "https://example.com"
-#       note: "Joint work on migration and survey methods."
+#       role: "PhD student"
+#       affiliation: "University of Copenhagen"

@@ -1,13 +1,53 @@
 # Research outputs, grouped into sections.
-# Add entries under a section's `items:` (use content-manager.html, or copy the
-# commented template at the bottom of this file). An entry WITH a `summary` gets
-# the full layout (index number, Read-summary toggle, BibTeX); without a summary
-# it renders as a compact entry. Empty sections show their `empty_message`.
+# An entry WITH a `summary` gets the full layout (index number, Read-summary
+# toggle, BibTeX); without a summary it renders as a compact entry. Empty
+# sections show their `empty_message`. Co-authors resolve via _data/coauthors.yml
+# (use `key`); your own name stays plain with `name: "Mette Foged"`.
 sections:
   - title: "Journal articles"
     description: "Published and forthcoming peer-reviewed work."
     empty_message: "No journal articles added yet."
-    items: []
+    items:
+      - title: "Language Training and Refugees' Integration"
+        year: 2024
+        venue: "Review of Economics and Statistics, 106(4)"
+        authors:
+          - name: "Mette Foged"
+          - key: "linea_hasager"
+          - key: "giovanni_peri"
+          - key: "jacob_arendt"
+          - key: "iben_bolvig"
+
+      - title: "Comparing the Effects of Policies for the Labor Market Integration of Refugees"
+        year: 2024
+        venue: "Journal of Labor Economics, 42"
+        authors:
+          - name: "Mette Foged"
+          - key: "linea_hasager"
+          - key: "giovanni_peri"
+
+      - title: "Intergenerational Spillover Effects of Language Training for Refugees"
+        year: 2023
+        venue: "Journal of Public Economics, 220"
+        authors:
+          - name: "Mette Foged"
+          - key: "linea_hasager"
+          - key: "giovanni_peri"
+          - key: "jacob_arendt"
+          - key: "iben_bolvig"
+
+      - title: "Family Migration and Relative Earnings Potentials"
+        year: 2016
+        venue: "Labour Economics, 42"
+        authors:
+          - name: "Mette Foged"
+
+      - title: "Immigrants' Effect on Native Workers: New Analysis on Longitudinal Data"
+        year: 2016
+        venue: "American Economic Journal: Applied Economics, 8(2)"
+        authors:
+          - name: "Mette Foged"
+          - key: "giovanni_peri"
 
   - title: "Working papers and projects"
     description: "Current papers, ongoing research, and major projects."
@@ -23,28 +63,3 @@ sections:
     description: "Earlier projects and analysis support."
     empty_message: "Nothing added yet."
     items: []
-
-# ---------------------------------------------------------------------------
-# TEMPLATE — copy into a section's items: (remove the leading "# " from each line)
-#
-#      - title: "Paper title"
-#        year: 2026
-#        status: "Working paper"        # optional; shown in the metadata line
-#        venue: "Journal or series"
-#        series: "Working Paper No. 1"  # optional
-#        authors:
-#          - key: "coauthor_key"        # from _data/coauthors.yml
-#          - name: "Mette Foged"        # your own name stays plain (no link)
-#        summary: "Abstract text. Include this to get the full paper layout."
-#        bibtex: |
-#          @unpublished{key2026,
-#            author = {Foged, Mette},
-#            title  = {Paper Title},
-#            year   = {2026}
-#          }
-#        links:
-#          - label: "Working paper"
-#            url: "https://example.com/paper"
-#          - label: "Older version"
-#            url: "https://example.com/old"
-#            older: true                # tucked behind an "Older versions" toggle

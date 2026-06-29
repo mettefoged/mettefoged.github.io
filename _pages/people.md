@@ -23,14 +23,28 @@ dek: "Students I have supervised, co-authors, and people I have worked with."
         <span class="rule"></span>
       </div>
       {% if group.members %}
-        <ul class="people-list">
-          {% for person in group.members %}
-            <li class="person">
-              <p class="person__name">
-                {% if person.url %}<a href="{{ person.url }}" target="_blank" rel="noopener">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}
-              </p>
-              {% if person.role %}<p class="person__role">{{ person.role }}</p>{% endif %}
-              {% if person.note %}<p class="person__note">{{ person.note }}</p>{% endif %}
+        <ul class="people-grid">
+          {% for member in group.members %}
+            {% assign co = nil %}
+            {% if member.key %}{% assign co = site.data.coauthors[member.key] %}{% endif %}
+            {% assign p_name = member.name | default: co.name %}
+            {% assign p_url = member.url | default: co.url %}
+            {% assign p_photo = member.photo | default: co.photo %}
+            {% assign p_role = member.role | default: co.role %}
+            {% assign p_affil = member.affiliation | default: co.affiliation %}
+            <li class="pcard">
+              {% if p_url %}<a class="pcard__link" href="{{ p_url }}" target="_blank" rel="noopener">{% endif %}
+                <div class="pcard__photo">
+                  {% if p_photo %}
+                    <img src="{{ p_photo | relative_url }}" alt="{{ p_name }}" loading="lazy">
+                  {% else %}
+                    <span class="pcard__initial">{{ p_name | strip | slice: 0, 1 }}</span>
+                  {% endif %}
+                </div>
+                <p class="pcard__name">{{ p_name }}</p>
+                {% if p_role %}<p class="pcard__role">{{ p_role }}</p>{% endif %}
+                {% if p_affil %}<p class="pcard__affil">{{ p_affil }}</p>{% endif %}
+              {% if p_url %}</a>{% endif %}
             </li>
           {% endfor %}
         </ul>

@@ -1,7 +1,25 @@
-# Frequent co-authors, defined once and reused in _data/research.yml via `key`.
-# Each key maps to a display name and a homepage URL (the name becomes a link).
-# Add your own collaborators here, for example:
+# Co-author / people library — define each person ONCE here, then reuse them by
+# `key` in both _data/research.yml (paper bylines) and _data/people.yml (the
+# People grid). No need to retype names or URLs.
 #
-# jens_hainmueller:
-#   name: "Jens Hainmueller"
-#   url: "https://j-hai.github.io/"
+# Each entry supports:
+#   name        (required)  — display name (byline + People card name)
+#   url         (optional)  — homepage; makes the name / People card a link
+#   photo       (optional)  — path under /images/people/, used on the People grid
+#   role        (optional)  — position / title, used on the People grid
+#   affiliation (optional)  — institution, used on the People grid
+#
+# TODO (Mette): add url / photo / affiliation to each person below as desired —
+# they show up automatically on the People page.
+
+linea_hasager:
+  name: "Linea Hasager"
+
+giovanni_peri:
+  name: "Giovanni Peri"
+
+jacob_arendt:
+  name: "Jacob Nielsen Arendt"
+
+iben_bolvig:
+  name: "Iben Bolvig"

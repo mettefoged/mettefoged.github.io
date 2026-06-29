@@ -556,49 +556,47 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 680px;
 }
 
-/* ----- Projects ------------------------------------------------------- */
-.project { margin: 0 0 18px; }
-.project__dek {
-  font-family: var(--serif);
-  font-size: 17px;
-  line-height: 1.55;
-  color: var(--body-alt);
-  margin: 14px 0 4px;
-  max-width: 680px;
+/* ----- Projects (expandable photo grid) ------------------------------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 32px;
+  align-items: start;
+  margin-top: 20px;
 }
+.proj { border: 1px solid var(--hairline); background: var(--paper); }
+.proj__summary { list-style: none; cursor: pointer; display: block; }
+.proj__summary::-webkit-details-marker { display: none; }
+.proj__photo { display: block; aspect-ratio: 4 / 3; background: #efeeea; overflow: hidden; }
+.proj__photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.proj__bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; }
+.proj__title { font-family: var(--serif); font-weight: 600; font-size: 21px; line-height: 1.2; color: var(--ink); }
+.proj__toggle { flex: none; width: 18px; height: 18px; position: relative; }
+.proj__toggle::before, .proj__toggle::after { content: ""; position: absolute; background: var(--accent); transition: opacity 0.15s ease; }
+.proj__toggle::before { top: 8px; left: 2px; width: 14px; height: 2px; }
+.proj__toggle::after { left: 8px; top: 2px; width: 2px; height: 14px; }
+.proj[open] .proj__toggle::after { opacity: 0; }
+.proj__body { padding: 0 16px 18px; }
+.proj__desc { font-family: var(--serif); font-size: 16px; line-height: 1.55; color: var(--body); margin: 0 0 14px; }
+.proj__papers { list-style: none; margin: 0; padding: 0; }
+.proj__paper { border-top: 1px solid var(--hairline); padding: 12px 0; }
+.proj__paper:first-child { border-top: 0; padding-top: 0; }
+.proj__paper-title { font-family: var(--serif); font-weight: 600; font-size: 16px; line-height: 1.3; margin: 0; }
+.proj__paper-meta { font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted-3); margin: 5px 0 0; }
+.proj__paper-links { margin: 7px 0 0; display: flex; flex-wrap: wrap; gap: 6px 16px; }
 
-/* ----- People --------------------------------------------------------- */
+/* ----- People (photo-card grid) --------------------------------------- */
 .people-group { margin: 0 0 18px; }
-.people-list { list-style: none; margin: 0; padding: 0; max-width: 760px; }
-.person {
-  border-top: 1px solid var(--hairline);
-  padding: 18px 0;
-}
-.person__name {
-  font-family: var(--serif);
-  font-size: 19px;
-  font-weight: 600;
-  line-height: 1.3;
-  margin: 0;
-}
-.person__name a { color: var(--ink); border-bottom: 1px solid var(--author-underline); }
-.person__name a:hover { border-bottom-color: var(--ink); }
-.person__role {
-  font-family: var(--sans);
-  font-size: 11.5px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted-3);
-  margin: 6px 0 0;
-}
-.person__note {
-  font-family: var(--serif);
-  font-size: 15.5px;
-  line-height: 1.5;
-  color: var(--body);
-  margin: 7px 0 0;
-}
+.people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 28px 24px; list-style: none; margin: 20px 0 0; padding: 0; }
+.pcard { margin: 0; }
+.pcard__link { display: block; color: inherit; }
+.pcard__photo { aspect-ratio: 4 / 5; background: #efeeea; overflow: hidden; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
+.pcard__photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pcard__initial { font-family: var(--serif); font-size: 44px; font-weight: 500; color: var(--muted-3); }
+.pcard__name { font-family: var(--serif); font-weight: 600; font-size: 16px; line-height: 1.25; color: var(--ink); margin: 0; }
+.pcard__link:hover .pcard__name { color: var(--accent); }
+.pcard__role { font-family: var(--sans); font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted-3); margin: 5px 0 0; }
+.pcard__affil { font-family: var(--serif); font-style: italic; font-size: 13px; color: var(--muted); margin: 3px 0 0; }
 
 /* ----- Notes ---------------------------------------------------------- */
 .notes-empty {

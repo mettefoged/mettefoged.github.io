@@ -156,16 +156,27 @@ The papers use the same fields as `research.yml` entries (so co-author links and
 
 ### People (`_data/people.yml`)
 
-People are organised into groups (PhD students, collaborators, …):
+A grid of photo cards, organised into groups (PhD students, collaborators, …).
+Each member is either a reference to someone in `coauthors.yml` (so you don't
+retype the name/url) or an inline person:
 
 ```yml
 - group: "PhD students"
   members:
+    # reuse a person from coauthors.yml — pulls name, url, photo, role, affiliation
+    - key: "jens_hainmueller"
+      role: "PhD student"            # optional: override for this context
+    # or define a one-off inline:
     - name: "Student Name"
-      role: "PhD student, 2023–"     # optional
-      url: "https://example.com"     # optional — makes the name a link
-      note: "Short description."     # optional
+      photo: "/images/people/student.jpg"   # optional (else shows an initial)
+      role: "PhD student"                    # optional — position/title
+      affiliation: "University of Copenhagen" # optional
+      url: "https://example.com"             # optional — makes the card a link
 ```
+
+Photos live in `images/people/`. Because `coauthors.yml` is shared with
+Research, you can add `photo`, `role`, and `affiliation` to an entry there once
+and reference it by `key` on both pages.
 
 ### CV
 

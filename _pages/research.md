@@ -9,10 +9,8 @@ dek: "Journal articles, working papers, and ongoing projects."
 ---
 
 <header class="page-head">
-  <div class="kicker">Research</div>
   <h1 class="page-head__title">{{ page.heading | default: page.title }}</h1>
   {% if page.dek %}<p class="page-head__dek">{{ page.dek }}</p>{% endif %}
-  {% if site.author.citation_name %}<p class="cite-note">Preferred citation: <span>{{ site.author.citation_name }}</span></p>{% endif %}
 </header>
 
 {% for section in site.data.research.sections %}

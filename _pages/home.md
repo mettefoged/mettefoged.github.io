@@ -12,10 +12,6 @@ redirect_from:
 <section class="home-lead-block">
   <p class="home-standfirst">{{ site.author.bio }}</p>
   <p class="home-lead-2">This site brings together my current research, academic writing, and shorter notes on methods, data, and policy questions.</p>
-  <div class="home-actions">
-    <a class="ed-btn ed-btn--solid" href="{{ '/research/' | relative_url }}">View Research</a>
-    <a class="ed-btn ed-btn--ghost" href="{{ '/notes/' | relative_url }}">Browse Notes</a>
-  </div>
 </section>
 
 <div class="home-grid">
@@ -35,14 +31,7 @@ redirect_from:
       <figcaption class="rail__caption">{{ site.author.name }}, {{ site.author.location }}.</figcaption>
     </figure>
 
-    {% if site.author.citation_name %}
-    <div class="rail__block rail__block--first rail__cite">
-      <div class="rail__label">Cite as</div>
-      <div class="rail__cite-value">{{ site.author.citation_name }}</div>
-    </div>
-    {% endif %}
-
-    <div class="rail__block">
+    <div class="rail__block rail__block--first">
       <div class="rail__label">Affiliations</div>
       <div class="rail__value">
         {% for emp in site.author.employer %}{{ emp }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}
@@ -64,6 +53,9 @@ redirect_from:
       <div class="rail__profiles">
         {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar →</a>{% endif %}
         {% if site.author.orcid %}<a href="{{ site.author.orcid }}" target="_blank" rel="noopener">ORCID →</a>{% endif %}
+        {% if site.author.rfberlin %}<a href="{{ site.author.rfberlin }}" target="_blank" rel="noopener">RFBerlin →</a>{% endif %}
+        {% if site.author.rockwool %}<a href="{{ site.author.rockwool }}" target="_blank" rel="noopener">ROCKWOOL Foundation →</a>{% endif %}
+        {% if site.author.ku %}<a href="{{ site.author.ku }}" target="_blank" rel="noopener">University of Copenhagen →</a>{% endif %}
       </div>
     </div>
   </aside>

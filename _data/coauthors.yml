@@ -8,12 +8,10 @@
 #   photo       (optional)  — path under /images/people/, used on the People grid
 #   role        (optional)  — position / title, used on the People grid
 #   affiliation (optional)  — institution, used on the People grid
-#
-# TODO (Mette): add url / photo / affiliation to each person below as desired —
-# they show up automatically on the People page.
 
 linea_hasager:
   name: "Linea Hasager"
+  url: "https://sites.google.com/view/lineahasager/home"
 
 giovanni_peri:
   name: "Giovanni Peri"
@@ -23,3 +21,10 @@ jacob_arendt:
 
 iben_bolvig:
   name: "Iben Bolvig"
+
+mikkel_stahlschmidt:
+  name: "Mikkel H. Stahlschmidt"
+  url: "https://econmikkel.github.io/"
+  role: "PhD student"
+  photo: "mikkel_stahlschmidt.jpg"
+  affiliation: "ROCKWOOL Foundation, University of Copenhagen"

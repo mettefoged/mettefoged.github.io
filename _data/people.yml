@@ -8,9 +8,6 @@
     - key: "jacob_arendt"
     - key: "iben_bolvig"
 
-# Add more groups as needed, e.g.:
-# - group: "PhD students"
-#   members:
-#     - name: "Student Name"
-#       role: "PhD student"
-#       affiliation: "University of Copenhagen"
+- group: "PhD students"
+  members:
+    - key: "mikkel_stahlschmidt"

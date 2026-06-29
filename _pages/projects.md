@@ -9,7 +9,6 @@ dek: "Ongoing research agendas. Click a project to see what it is about and the 
 ---
 
 <header class="page-head">
-  <div class="kicker">Projects</div>
   <h1 class="page-head__title">{{ page.heading | default: page.title }}</h1>
   {% if page.dek %}<p class="page-head__dek">{{ page.dek }}</p>{% endif %}
 </header>

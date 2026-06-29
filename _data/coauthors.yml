@@ -13,55 +13,78 @@ jacob_arendt:
   name: "Jacob Nielsen Arendt"
   url: "https://rockwoolfonden.dk/medarbejdere/jacob-nielsen-arendt/"
   photo: "jacob_arendt.jpg"
+  role: "Research Professor"
+  affiliation: "ROCKWOOL Foundation"
 
 iben_bolvig:
   name: "Iben Bolvig"
   url: "https://www.seniorerpaaarbejdsmarkedet.dk/da/medarbejdere/iben-bolvig-06z7z4j2/"
+  role: "Senior Researcher"
+  affiliation: "VIVE"
+  photo: "iben_bolvig.jpg"
 
 teresa_freitas_monteiro:
   name: "Teresa Freitas Monteiro"
   url: "https://teresafreitasmonteiro.weebly.com/"
   photo: "teresa_freitas_monteiro.jpg"
+  role: "Assistant Professor of Economics"
+  affiliation: "CERGE-EI"
 
 jens_hainmueller:
   name: "Jens Hainmueller"
   url: "https://j-hai.github.io/"
   photo: "jens_hainmueller.jpg"
+  role: "Professor of Political Science"
+  affiliation: "Stanford University"
 
 linea_hasager:
   name: "Linea Hasager"
   url: "https://sites.google.com/view/lineahasager/home"
   photo: "linea_hasager.jpg"
+  role: "Assistant Professor"
+  affiliation: "University of Copenhagen"
 
 karen_inge_karstoft:
   name: "Karen-Inge Karstoft"
   url: "https://psy.ku.dk/ansatte/videnskabeligt-personale/?pure=da/persons/278315"
   photo: "karen_inge_karstoft.jpg"
+  role: "Professor"
+  affiliation: "University of Copenhagen"
 
 janis_kreuder:
   name: "Janis Kreuder"
   url: "https://www.linkedin.com/in/janis-kreuder/"
   photo: "janis_kreuder.jpg"
+  role: "Statistics and Data Analysis Associate"
+  affiliation: "UNHCR"
 
 giovanni_peri:
   name: "Giovanni Peri"
   url: "https://giovanniperi.ucdavis.edu/"
   photo: "giovanni_peri.jpg"
+  role: "Professor of Economics"
+  affiliation: "University of California, Davis"
 
 cynthia_van_der_werf:
   name: "Cynthia van der Werf"
   url: "https://cynthiavanderwerf.com/"
   photo: "cynthia_van_der_werf.jpg"
+  role: "Economist"
+  affiliation: "Inter-American Development Bank"
 
 vasco_yasenov:
   name: "Vasco Yasenov"
   url: "https://vyasenov.github.io/"
   photo: "vasco_yasenov.jpg"
+  role: "Staff Data Scientist"
+  affiliation: "Adobe"
 
 edith_zink:
   name: "Edith Zink"
   url: "https://zinked.github.io/"
   photo: "edith_zink.jpg"
+  role: "Postdoctoral Researcher"
+  affiliation: "University of Copenhagen"
 
 mikkel_stahlschmidt:
   name: "Mikkel H. Stahlschmidt"

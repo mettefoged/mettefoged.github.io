@@ -1,15 +1,16 @@
 # Academic Website
 
 A static Jekyll site styled as a New York Times–style editorial layout
-(Newsreader + Libre Franklin, black-on-white, hairline/scotch rules). It has
-three pages — **Home** (`/`), **Research** (`/research/`), **Notes** (`/notes/`) —
-and three editing workflows:
+(Newsreader + Libre Franklin, black-on-white, hairline/scotch rules). Pages:
 
-1. Update homepage news in `_data/news.yml`
-2. Update publications and projects in `_data/research.yml`
-3. Publish blog-style notes by adding Markdown files to `_posts/`
+- **Home** (`/`) — bio, news ("The Latest"), and the profile rail.
+- **Research** (`/research/`) — articles, working papers, projects, edit `_data/research.yml`.
+- **Projects** (`/projects/`) — research agendas that group related papers, edit `_data/projects.yml`.
+- **People** (`/people/`) — students and collaborators, edit `_data/people.yml`.
+- **CV** — the nav links straight to `files/CV.pdf` (add your CV there).
 
-You never edit HTML/CSS to add content — just the data files and posts below.
+You never edit HTML/CSS to add content — just the data files below. The header
+nav lives in `_data/navigation.yml` (Home is added automatically).
 
 ## Preview locally
 
@@ -131,21 +132,53 @@ mette_foged:
 
 For one-off collaborators, use an inline `name` (with an optional `url`).
 
-### Notes and blog posts (`_posts/`)
+### Projects (`_data/projects.yml`)
 
-Create a file named `YYYY-MM-DD-title.md`:
+Each project is a research agenda that gathers a few related papers:
 
-```md
----
-title: "A short note title"
-excerpt: "One-sentence summary shown in the notes list."
----
-
-Write the post here.
+```yml
+- title: "Refugee integration"
+  description: "A line of work on how reception policy shapes outcomes."
+  papers:
+    - title: "Paper title"
+      year: 2024
+      venue: "Journal of Something"
+      authors:
+        - name: "Mette Foged"
+        - key: "coauthor_key"
+      links:
+        - label: "Paper"
+          url: "https://example.com"
 ```
 
-When `_posts/` is empty the Notes page shows an empty-state block; once posts
-exist they render as an editorial article list automatically.
+The papers use the same fields as `research.yml` entries (so co-author links and
+`older:` flags work the same way).
+
+### People (`_data/people.yml`)
+
+People are organised into groups (PhD students, collaborators, …):
+
+```yml
+- group: "PhD students"
+  members:
+    - name: "Student Name"
+      role: "PhD student, 2023–"     # optional
+      url: "https://example.com"     # optional — makes the name a link
+      note: "Short description."     # optional
+```
+
+### CV
+
+The **CV** nav item links straight to `files/CV.pdf`. Drop your PDF in the
+`files/` folder with that exact name (or change the URL in
+`_data/navigation.yml`). The link opens in a new tab.
+
+### Notes / blog (disabled)
+
+A Notes/blog section exists in the templates but is turned off
+(`_pages/notes.md` has `published: false`, and it's not in the nav). To bring it
+back, set `published: true` there and add a `Notes` item to
+`_data/navigation.yml`; posts go in `_posts/` as `YYYY-MM-DD-title.md`.
 
 ### Your name and preferred citation
 

@@ -1,5 +1,14 @@
 {% include base_path %}
 
+{% comment %}
+  Masthead: utility bar, centred nameplate (links Home), scotch rule, and the
+  sticky navigation bar. The nav is built from _data/navigation.yml with "Home"
+  prepended. Active-page underline: an internal page link is active when the
+  current URL contains its first path segment (e.g. /research/ -> "research").
+  Links to a .pdf or an external http(s) URL open in a new tab and are never
+  marked active (used for the CV link).
+{% endcomment %}
+
 <header class="masthead ed-masthead">
   <div class="ed-utility">
     <span>{{ site.author.location | default: "Copenhagen, Denmark" }}</span>
@@ -17,7 +26,6 @@
   <div class="ed-nav__inner">
     <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="is-active"{% endif %}>Home</a>
     {% for link in site.data.navigation.main %}
-      {% comment %} external / file links open in a new tab and never show active {% endcomment %}
       {% assign is_ext = false %}
       {% if link.url contains 'http' or link.url contains '.pdf' %}{% assign is_ext = true %}{% endif %}
       {% if is_ext %}{% assign href = link.url %}{% else %}{% assign href = link.url | relative_url %}{% endif %}

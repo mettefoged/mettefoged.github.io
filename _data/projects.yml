@@ -1,0 +1,18 @@
+# Larger research agendas, each gathering a few related papers.
+# Each agenda has a title, a short description, and a list of `papers`.
+# Papers reuse the same fields as research.yml entries (authors resolve via
+# coauthors.yml; add `older: true` on a link to tuck it behind a toggle).
+# Leave this file with no agendas and the Projects page shows a placeholder.
+
+# - title: "Refugee integration"
+#   description: "A line of work on how reception policy shapes refugee outcomes."
+#   papers:
+#     - title: "Paper title"
+#       year: 2024
+#       venue: "Journal of Something"
+#       authors:
+#         - name: "Mette Foged"
+#         - key: "coauthor_key"
+#       links:
+#         - label: "Paper"
+#           url: "https://example.com"

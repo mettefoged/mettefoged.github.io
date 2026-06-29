@@ -1,6 +1,20 @@
-# Header navigation (Home is added automatically before these).
-# Reorder/add/remove items here. A link to a .pdf or an external http(s) URL
-# opens in a new tab; internal page links drive the active-page underline.
+# ---------------------------------------------------------------------------
+# Header navigation
+# ---------------------------------------------------------------------------
+# These are the links shown in the top navigation bar, in order. "Home" is
+# added automatically before this list, so you don't need to include it here.
+#
+# How links behave:
+#   * An internal page link (for example /research/) drives the active-page
+#     underline when you are on that page.
+#   * A link to a .pdf file or to an external http(s) address opens in a new
+#     browser tab and never shows the active underline. That is how the CV
+#     entry below works — it points straight at the PDF in the files/ folder.
+#
+# To add, remove, or reorder pages, edit the list below. To bring back a Notes
+# or blog section, add an item such as { title: "Notes", url: /notes/ } and set
+# published: true in _pages/notes.md.
+# ---------------------------------------------------------------------------
 
 main:
   - title: "Research"

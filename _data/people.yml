@@ -1,0 +1,18 @@
+# People, organised into groups (e.g. PhD students, collaborators).
+# Each group has a `group` name and a list of `members`.
+# Each member: name (required), optional role, url (makes the name a link),
+# and an optional note describing the collaboration.
+# Leave this with no groups and the People page shows a placeholder.
+
+# - group: "PhD students"
+#   members:
+#     - name: "Student Name"
+#       role: "PhD student, 2023–"
+#       url: "https://example.com"
+#       note: "Working on refugee labour-market integration."
+#
+# - group: "Collaborators"
+#   members:
+#     - name: "Collaborator Name"
+#       url: "https://example.com"
+#       note: "Joint work on migration and survey methods."

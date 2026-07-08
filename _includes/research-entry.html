@@ -10,7 +10,7 @@
   (no key / url) stays plain text.
 {% endcomment %}
 
-{% if entry.summary %}
+{% if entry.summary or entry.bibtex %}
 <article class="wp">
   <div class="wp__num">{{ number }}</div>
   <div class="wp__content">
@@ -21,7 +21,7 @@
       {%- if entry.status %} &nbsp;·&nbsp; <span class="wp__status">{{ entry.status }}</span>{% endif -%}
     </div>
 
-    <h3 class="wp__title">{{ entry.title | strip }}</h3>
+    <h3 class="wp__title">{% if entry.url %}<a href="{{ entry.url }}" target="_blank" rel="noopener">{{ entry.title | strip }}</a>{% else %}{{ entry.title | strip }}{% endif %}</h3>
 
     {% if entry.authors %}
       <p class="wp__byline">
@@ -37,17 +37,21 @@
     {% endif %}
 
     <div class="wp__actions">
+      {% if entry.summary %}
       <button class="wp__btn" type="button" aria-expanded="false"
               onclick="var p=this.closest('.wp__content').querySelector('[data-panel=summary]');var h=p.hasAttribute('hidden');if(h){p.removeAttribute('hidden');this.textContent='Hide summary —';}else{p.setAttribute('hidden','');this.textContent='Read summary +';}this.setAttribute('aria-expanded',h);">Read summary +</button>
+      {% endif %}
       {% if entry.bibtex %}
         <button class="wp__btn" type="button" aria-expanded="false"
                 onclick="var p=this.closest('.wp__content').querySelector('[data-panel=bibtex]');var h=p.hasAttribute('hidden');if(h){p.removeAttribute('hidden');this.textContent='Hide BibTeX —';}else{p.setAttribute('hidden','');this.textContent='BibTeX +';}this.setAttribute('aria-expanded',h);">BibTeX +</button>
       {% endif %}
     </div>
 
+    {% if entry.summary %}
     <div class="wp__summary" data-panel="summary" hidden>
       <p>{{ entry.summary }}</p>
     </div>
+    {% endif %}
 
     {% if entry.bibtex %}
       <div class="wp__bibtex" data-panel="bibtex" hidden>
@@ -89,7 +93,7 @@
     {%- if entry.venue %}{{ entry.venue }}{% endif -%}
     {%- if entry.year %} &nbsp;·&nbsp; {{ entry.year }}{% endif -%}
   </div>
-  <h3 class="older__title">{{ entry.title | strip }}</h3>
+  <h3 class="older__title">{% if entry.url %}<a href="{{ entry.url }}" target="_blank" rel="noopener">{{ entry.title | strip }}</a>{% else %}{{ entry.title | strip }}{% endif %}</h3>
   {% if entry.authors %}
     <p class="older__byline">
       {%- for author in entry.authors -%}

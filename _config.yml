@@ -10,7 +10,6 @@ repository: "mettefoged/mettefoged.github.io"
 author:
   avatar: "profile.jpg"
   name: "Mette Foged"
-  citation_name: "Foged, M."
   # TODO: replace with your own short bio
   bio: "Economist working on migration, labour markets, and applied microeconometrics."
   # TODO: update your affiliations
@@ -18,9 +17,12 @@ author:
     - "University of Copenhagen, Department of Economics"
     - "ROCKWOOL Foundation"
   location: "Copenhagen, Denmark"
-  email: "TODO@example.com"        # TODO: your email
-  googlescholar: ""                # TODO: your Google Scholar URL
-  orcid: ""                        # TODO: your ORCID URL
+  email: "mf@rff.dk"
+  googlescholar: "https://scholar.google.com/citations?user=jsOZ7CQAAAAJ&hl=da"
+  orcid: "https://orcid.org/0000-0002-0456-1521"
+  rfberlin: "https://www.rfberlin.com/author/mf/"
+  rockwool: "https://rockwoolfonden.dk/medarbejdere/mette-foged/"
+  ku: "https://www.econ.ku.dk/ansatte/vip/?pure=da/persons/265951"
 
 teaser:
 breadcrumbs: false
@@ -40,8 +42,9 @@ og_image:
 social:
   type: "Person"
   name: "Mette Foged"
-  links:                           # TODO: add your Scholar / ORCID / profile URLs
-    - ""
+  links:
+    - "https://scholar.google.com/citations?user=jsOZ7CQAAAAJ&hl=da"
+    - "https://orcid.org/0000-0002-0456-1521"
 
 include:
   - .htaccess

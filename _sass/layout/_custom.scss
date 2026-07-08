@@ -692,7 +692,18 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 600px) {
   .ed-shell { padding: 0 18px; }
-  .ed-nav { gap: 22px; }
+  /* let the nav wrap onto multiple rows instead of overflowing the screen */
+  .ed-nav__inner { flex-wrap: wrap; gap: 10px 16px; padding: 12px 0; }
+  .ed-nav a { font-size: 12px; letter-spacing: 0.05em; padding-bottom: 3px; }
   .wp { grid-template-columns: 1fr; }
   .wp__num { display: none; }
 }
+
+/* ----- CV embed ------------------------------------------------------- */
+.cv-actions { margin: 10px 0 0; }
+.cv-embed { margin-top: 24px; height: 85vh; min-height: 600px; border: 1px solid var(--hairline); }
+.cv-embed object, .cv-embed iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* Title-as-link (used by Research Dissemination entries) */
+.older__title a, .wp__title a { color: var(--ink); }
+.older__title a:hover, .wp__title a:hover { color: var(--accent); }

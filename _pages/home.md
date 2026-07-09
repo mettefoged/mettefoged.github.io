@@ -11,7 +11,7 @@ redirect_from:
 
 <section class="home-lead-block">
   <p class="home-standfirst">{{ site.author.bio }}</p>
-  <p class="home-lead-2">This site brings together my current research, academic writing, and shorter notes on methods, data, and policy questions.</p>
+  <p class="home-lead-2">This site brings together my current research, academic writing, and policy briefs.</p>
 </section>
 
 <div class="home-grid">

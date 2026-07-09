@@ -5,7 +5,7 @@ permalink: /people/
 excerpt: "People I have collaborated with."
 author_profile: false
 heading: "People"
-dek: "People who I have had an excellent opportunity to collaborate with."
+dek: "All my excellent co-authors:"
 ---
 
 <header class="page-head">

@@ -45,7 +45,7 @@ redirect_from:
 
     <div class="rail__block">
       <div class="rail__label">Email</div>
-      <div class="rail__value"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></div>
+      <div class="rail__value"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>{% if site.author.email_ku %}<br><a href="mailto:{{ site.author.email_ku }}">{{ site.author.email_ku }}</a>{% endif %}</div>
     </div>
 
     <div class="rail__block">
@@ -53,6 +53,7 @@ redirect_from:
       <div class="rail__profiles">
         {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar →</a>{% endif %}
         {% if site.author.orcid %}<a href="{{ site.author.orcid }}" target="_blank" rel="noopener">ORCID →</a>{% endif %}
+        {% if site.author.iza %}<a href="{{ site.author.iza }}" target="_blank" rel="noopener">IZA →</a>{% endif %}
         {% if site.author.rfberlin %}<a href="{{ site.author.rfberlin }}" target="_blank" rel="noopener">RFBerlin →</a>{% endif %}
         {% if site.author.rockwool %}<a href="{{ site.author.rockwool }}" target="_blank" rel="noopener">ROCKWOOL Foundation →</a>{% endif %}
         {% if site.author.ku %}<a href="{{ site.author.ku }}" target="_blank" rel="noopener">University of Copenhagen →</a>{% endif %}

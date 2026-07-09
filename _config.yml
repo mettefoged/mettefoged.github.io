@@ -14,15 +14,17 @@ author:
   bio: "Economist working on migration, labour markets, and applied microeconometrics."
   # TODO: update your affiliations
   employer:
-    - "University of Copenhagen, Department of Economics"
+    - "University of Copenhagen"
     - "ROCKWOOL Foundation"
   location: "Copenhagen, Denmark"
   email: "mf@rff.dk"
+  email_ku: "mette.foged@econ.ku.dk"
   googlescholar: "https://scholar.google.com/citations?user=jsOZ7CQAAAAJ&hl=da"
   orcid: "https://orcid.org/0000-0002-0456-1521"
   rfberlin: "https://www.rfberlin.com/author/mf/"
   rockwool: "https://rockwoolfonden.dk/medarbejdere/mette-foged/"
   ku: "https://www.econ.ku.dk/ansatte/vip/?pure=da/persons/265951"
+  iza: "https://www.iza.org/person/10325/mette-foged"
 
 teaser:
 breadcrumbs: false

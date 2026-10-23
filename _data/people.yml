@@ -2,7 +2,21 @@
 # _data/coauthors.yml by `key` (recommended) or is defined inline
 # (name, plus optional role / affiliation / url / photo).
 
-- group: "Coauthors"
+- group: "PhD Students"
+  members:
+    - key: "mikkel_stahlschmidt"
+    - years: "2024–" 
+    - key: "linea_hasager"
+    - years: "2017-2020"
+    
+- group: "Postdocs"
+  members:
+    - key: "edith_zink"
+    - years: "2023-"
+    - key: "teresa_freitas_monteiro"
+    - years: "2023-2025"
+    
+  - group: "Coauthors"
   members:
     - key: "jacob_arendt"
     - key: "iben_bolvig"
@@ -17,13 +31,5 @@
     - key: "vasco_yasenov"
     - key: "edith_zink"
 
-- group: "PhD Students"
-  members:
-    - key: "mikkel_stahlschmidt"
-    - key: "linea_hasager"
-    
-- group: "Postdocs"
-  members:
-    - key: "edith_zink"
-    - key: "teresa_freitas_monteiro"
+
     

@@ -12,18 +12,18 @@
   photo: "refugee-integration-policy.jpg"
   description: "How language training and active labour-market policies shape refugees' economic and social integration."
   papers:
-    - title: "Language Training and Refugees' Integration"
-      year: 2024
-      venue: "Review of Economics and Statistics"
-      links:
-        - label: "DOI"
-          url: "https://doi.org/10.1162/rest_a_01216"
     - title: "Comparing the Effects of Policies for the Labor Market Integration of Refugees"
       year: 2024
       venue: "Journal of Labor Economics"
       links:
         - label: "DOI"
           url: "https://doi.org/10.1086/728806"
+    - title: "Language Training and Refugees' Integration"
+      year: 2024
+      venue: "Review of Economics and Statistics"
+      links:
+        - label: "DOI"
+          url: "https://doi.org/10.1162/rest_a_01216"
     - title: "Intergenerational Spillover Effects of Language Training for Refugees"
       year: 2023
       venue: "Journal of Public Economics"

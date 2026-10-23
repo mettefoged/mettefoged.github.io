@@ -5,7 +5,7 @@ permalink: /people/
 excerpt: "Coauthors, PhD students and postdocs."
 author_profile: false
 heading: "People"
-dek: "My excellent coauthors and research team."
+dek: "My excellent coauthors."
 ---
 
 <header class="page-head">

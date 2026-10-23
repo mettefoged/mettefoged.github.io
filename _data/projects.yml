@@ -12,8 +12,8 @@
   photo: "refugee-integration-policy.jpg"
   description: "How language training and active labour-market policies shape refugees' economic and social integration."
   papers:
-      - title: "Integrating Refugees by Addressing Labor Shortages? A Policy Evaluation"
-      year: 2026    
+    - title: "Integrating Refugees by Addressing Labor Shortages? A Policy Evaluation"
+      year: 2026
       venue: "Research in Labor Economics"
       links:
         - label: "DOI"

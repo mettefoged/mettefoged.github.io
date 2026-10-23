@@ -4,7 +4,7 @@ title: "People"
 permalink: /people/
 excerpt: "People I have collaborated with."
 author_profile: false
-heading: "People"
+heading: "Coauthors"
 dek: "All my excellent co-authors:"
 ---
 

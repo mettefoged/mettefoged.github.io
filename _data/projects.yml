@@ -37,8 +37,11 @@
         - label: "DOI"
           url: "https://doi.org/10.1016/j.labeco.2023.102366"
     - title: "Integrating Refugees by Addressing Labor Shortages? A Policy Evaluation"
-      venue: "Research in Labor Economics (forthcoming)"
+      year: 2026    
+      venue: "Research in Labor Economics"
       links:
+        - label: "DOI"
+          url: "https://doi.org/10.1108/S0147-91212026000053A003"
         - label: "NBER working paper"
           url: "https://www.nber.org/papers/w29781"
 

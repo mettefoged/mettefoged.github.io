@@ -32,7 +32,7 @@ redirect_from:
     </figure>
 
     <div class="rail__block rail__block--first">
-      <div class="rail__label">Affiliations</div>
+      <div class="rail__label">Employment</div>
       <div class="rail__value">
         {% for emp in site.author.employer %}{{ emp }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}
       </div>

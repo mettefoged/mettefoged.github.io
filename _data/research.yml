@@ -6,9 +6,9 @@
 sections:
   - title: "Working papers"
     items:
-      - title: ""
+      - title: "Who Opens Their Homes to Refugees? Social ties and capacity during the Ukrainian refugee crisis"
         year: 2026
-        venue: ""
+        venue: "github"
         authors:
           - name: "Mette Foged"
           - key: "jens_hainmueller"

@@ -70,7 +70,7 @@ sections:
   - title: "Journal articles"
     items:
       - title: "Integrating Refugees by Addressing Labor Shortages? A Policy Evaluation"
-        venue: "Research in Labor Economics (forthcoming)"
+        venue: "Research in Labor Economics"
         authors:
           - name: "Mette Foged"
           - key: "janis_kreuder"
@@ -83,7 +83,9 @@ sections:
             note    = {Forthcoming}
           }
         links:
-          - label: "NBER working paper"
+          - label: "DOI"
+            url: "https://doi.org/10.1108/S0147-91212026000053A003"
+          - label: "NBER version"
             url: "https://www.nber.org/papers/w29781"
 
       - title: "Language Training and Refugees' Integration"

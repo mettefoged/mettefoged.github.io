@@ -49,17 +49,24 @@
   photo: "ukrainian-displacement.jpg"
   description: "Reception, accommodation, and well-being of Ukrainian refugees who arrived in Denmark after the 2022 invasion."
   papers:
+  
+    - title: "Who Opens Their Homes to Refugees? Social ties and capacity during the Ukrainian refugee crisis"
+      year: 2026
+      venue: "Draft"
+      links:
+        - label: "LINK"
+          url: "https://j-hai.github.io/assets/pdf/hostingden.pdf"
     - title: "How Initial Accommodation Shapes Refugee Integration: Quasi-Experimental Evidence from the Ukrainian Displacement Crisis in Denmark"
       year: 2025
-      venue: "RFBerlin Working Paper"
+      venue: "RFBerlin Discussion Paper"
       links:
-        - label: "RFBerlin paper"
+        - label: "DOI"
           url: "https://www.rfberlin.com/wp-content/uploads/2025/12/25154.pdf"
     - title: "PTSD and Refugees' Underemployment: Evidence from Displaced Ukrainians"
       year: 2026
-      venue: "RFBerlin Working Paper"
+      venue: "RFBerlin Discussion Paper"
       links:
-        - label: "RFBerlin"
+        - label: "DOI"
           url: "https://www.rfberlin.com/research-insights/why-some-refugees-struggle-to-work/"
 
 - title: "Immigration and native labour markets"

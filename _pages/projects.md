@@ -4,8 +4,8 @@ title: "Projects"
 permalink: /projects/
 excerpt: "Larger research agendas and the papers within them."
 author_profile: false
-heading: "Projects"
-dek: "IN PROGRESS: Ongoing research agendas. Click a project to see what it is about and the related papers."
+heading: "Project"
+dek: "Here I grouped my past and ongoing papers into research agendas. Click on a project to see what it is about and the related papers."
 ---
 
 <header class="page-head">

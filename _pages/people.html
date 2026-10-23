@@ -78,6 +78,13 @@ heading: "People"
             <p class="pcard__affil">{{ p_affil }}</p>
           {% endif %}
 
+          {% if member.years %}
+            <p class="pcard__years"
+               style="font-size: 0.85rem; color: #777; margin-top: 0.25rem;">
+              {{ member.years }}
+            </p>
+          {% endif %}      
+
           {% if p_url %}</a>{% endif %}
 
         </li>

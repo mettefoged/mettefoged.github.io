@@ -14,3 +14,14 @@
 - key: "cynthia_van_der_werf"
 - key: "vasco_yasenov"
 - key: "edith_zink"
+
+- group: "PhD Students"
+  members:
+    - key: "mikkel_stahlschmidt"
+    - key: "linea_hasager"
+    
+- group: "Postdocs"
+  members:
+    - key: "edith_zink"
+    - key: "teresa_freitas_monteiro"
+    

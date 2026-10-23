@@ -5,18 +5,18 @@
 - group: "PhD Students"
   members:
     - key: "mikkel_stahlschmidt"
-    - years: "2024–" 
+      years: "2024–" 
     - key: "linea_hasager"
-    - years: "2017-2020"
+      years: "2017-2020"
     
 - group: "Postdocs"
   members:
     - key: "edith_zink"
-    - years: "2023-"
+      years: "2023-"
     - key: "teresa_freitas_monteiro"
-    - years: "2023-2025"
+      years: "2023-2025"
     
-  - group: "Coauthors"
+- group: "Coauthors"
   members:
     - key: "jacob_arendt"
     - key: "iben_bolvig"

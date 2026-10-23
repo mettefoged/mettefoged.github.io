@@ -86,9 +86,9 @@
         - label: "DOI"
           url: "https://doi.org/10.1111/sjoe.12452"
 
-- title: "Immigration, neighbourhoods & identity"
+- title: "Migration, identity and social norms"
   photo: "neighbourhoods-identity.jpg"
-  description: "How neighbourhood policy, public rhetoric, and family decisions shape migrants' identity and outcomes."
+  description: "How do minority identities and values respond to state stigmatization, and how do gender norms influence who migrates?"
   papers:
     - title: "Harsh Rhetoric and Cultural Identity: Backlash Effects of Denmark's Ghetto List"
       year: 2025
@@ -100,5 +100,5 @@
       year: 2016
       venue: "Labour Economics"
       links:
-        - label: "Paper"
-          url: "https://www.sciencedirect.com/science/article/abs/pii/S0927537116300860"
+        - label: "DOI"
+          url: "https://doi.org/10.1016/j.labeco.2016.08.004"

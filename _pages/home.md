@@ -11,7 +11,7 @@ redirect_from:
 
 <section class="home-lead-block">
   <p class="home-standfirst">{{ site.author.bio }}</p>
-  <p class="home-lead-2">This site brings together my current research, academic writing, and policy briefs.</p>
+  <p class="home-lead-2">I split my time between the University of Copenhagen (associate professor) and the Rockwool Foundation (research position). This site brings together my research and policy briefs.</p>
 </section>
 
 <div class="home-grid">

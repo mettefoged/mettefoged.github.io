@@ -707,3 +707,22 @@ h1, h2, h3, h4, h5, h6 {
 /* Title-as-link (used by Research Dissemination entries) */
 .older__title a, .wp__title a { color: var(--ink); }
 .older__title a:hover, .wp__title a:hover { color: var(--accent); }
+
+
+/* Compact homepage news list */
+
+.home-main .news-item {
+  padding: 0 0 10px;
+  margin: 0;
+  border: none;
+}
+
+.home-main .news-item + .news-item {
+  border: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.home-main .news-item:last-child {
+  padding-bottom: 0;
+}

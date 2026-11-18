@@ -18,7 +18,7 @@ redirect_from:
   <!-- Main: The Latest -->
   <div class="home-main">
     <div class="section-rule">
-      <h2>The Latest</h2>
+      <h2>News</h2>
       <span class="rule"></span>
     </div>
     {% include news-list.html limit=4 %}

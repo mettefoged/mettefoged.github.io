@@ -9,3 +9,21 @@
 #   link:
 #     label: "Read more"
 #     url: "https://example.com"
+
+- date: 2026-11-24
+  title: "Public lecture, Oslo"
+  link:
+    label: "Event link"
+    url: "https://sprakradet.no/aktuelt/rapportlansering-norsk-i-kvardagen-sprakkompetanse-blant-innvandrarar-fra-polen-litauen-og-ukraina/"
+
+- date: 2026-11-18
+  title: "Faculty Research Seminar at the University of Innsbruck"
+
+- date: 2026-11-17
+  title: "IPL seminar at ETH Zürich"
+
+- date: 2026-11-12
+  title: "Science of International Migration Seminar (SIMS)"
+  link:
+    label: "Link SIMS"
+    url: "https://immigrationlab.org/science-of-international-migration-seminar-sims/"
